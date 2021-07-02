@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylenew.css">
+<meta name="viewport" content="width=device-width">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="./list.html">
+</head>
+<body>
+<div class="pop-up"><div class="cncl"></div>
+    <div class="inner-pop">
+    </div>
+  </div>
+<div class="main">
+  <h3>Todo list</h3>
+  <input type="text" placeholder="Todo">
+  <button id="btn2">Tambah</button>
+  <ol>
+  
+  </ol>
+  <button id="reset">Clear</button>
+  <button id="dlsltd">Delete Selected</button>
+</div>
+<style>
+
+body {
+  font-family: Calibri (Body), Helvetica, sans-serif;
+}
+
+ol li p {
+  padding:0;
+  margin:0;
+  display: inline-block;
+  width: 85%; 
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 5px; 
+  box-sizing: border-box; 
+  text-overflow: ellipsis;
+}
+
+.main {
+  width: 500px; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  border:10px solid #f1f1f1;
+  padding:25px;
+}
+
+li {
+  padding: 9px; 
+  margin: 5px 0px; 
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 10px; 
+  color: #6d5757; 
+  background-color: rgb(255, 255, 255); 
+  -webkit-appearance: none; 
+  border:1px solid #e0e0e0;  
+  margin: 5px 5px;
+  width: 370px;
+}
+
+button#btn2, button#reset, button#dlsltd {
+  -webkit-appearance: none; 
+  border: 0px; padding: 10px; 
+  background-color: #fb7e7e; 
+  border-radius: 13%;
+  color: black;
+  cursor: pointer;    
+  margin: 5px 0px;
+}
+
+.outer-cls {
+  position: absolute; 
+  top: 0;  
+  height: 46px;
+  left: 78%;
+  width: 46px; 
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #cfff5c;
+}
+
+li .inner-cls {
+  height: 24px;
+  width:24px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Crystal_button_cancel.svg/2000px-Crystal_button_cancel.svg.png);
+  background-size: 24px; 
+  background-color: transparent;
+  cursor: pointer; 
+  display: inline-block; 
+  float: right;
+}
+
+li .detail {
+  height: 24px;
+  width:24px;
+  background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fe7.pngegg.com%2Fpngimages%2F930%2F3%2Fpng-clipart-computer-icons-check-mark-others-text-logo.png&imgrefurl=https%3A%2F%2Fwww.pngegg.com%2Fid%2Fpng-tlxli&tbnid=eKxqJtZMkcNUBM&vet=12ahUKEwiDmt7L1ffvAhXPbX0KHbrbBTsQMygKegUIARDRAQ..i&docid=GffFdtEvbrRiGM&w=900&h=851&q=Icon%20centang&safe=strict&ved=2ahUKEwiDmt7L1ffvAhXPbX0KHbrbBTsQMygKegUIARDRAQ#imgrc=eKxqJtZMkcNUBM&imgdii=u0NCPJppDppsjM);
+  background-size: 24px; 
+  background-color: transparent;
+  cursor: pointer; 
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pop-up {
+  position: fixed; 
+  height: 250px; 
+  width: 250px; 
+  top: 50%; 
+  left: 50%; 
+  margin-left: -125px; 
+  margin-top: -125px; 
+  background-color: #fff; 
+  border: 1px solid #c7bfbf; 
+  box-shadow: 0px 2px 4px -1px;
+  display: none;
+  z-index: 9999;    
+  padding: 10px; 
+  box-sizing: border-box;
+  }
+
+</style>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./list.js"></script>
+</body>
+</html>
